@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoOnline: Three Strategic Video Roadmaps</title>
+    <title>EcoOnline: Video Growth Projections for All Options</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -14,18 +15,10 @@
             font-family: 'Inter', sans-serif;
             background-color: #F8F9FA;
         }
-        .tab-btn {
-            transition: all 0.3s ease;
-        }
-        .tab-btn.active {
-            background-color: #004D40;
-            color: #FFFFFF;
-            border-color: #004D40;
-        }
         .chart-container {
             position: relative;
             width: 100%;
-            height: 450px;
+            height: 500px;
         }
     </style>
 </head>
@@ -33,294 +26,225 @@
 
     <div class="max-w-6xl mx-auto p-4 sm:p-8">
 
-        <header class="text-center mb-16">
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-[#004D40]">EcoOnline: Three Strategic Video Roadmaps</h1>
-            <p class="mt-4 text-lg sm:text-xl text-gray-600">A data-driven plan to build a massive audience and dominate the EHS & ESG educational landscape in 2025.</p>
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-[#004D40]">Video Growth Projections: Three Paths to Market Leadership</h1>
+            <p class="mt-4 text-lg sm:text-xl text-gray-600">A conceptual model illustrating the potential impact of each strategic option against the current market.</p>
         </header>
 
-        <section class="mb-20">
+        <!-- Chart Section A -->
+        <section class="mb-16">
             <div class="bg-white p-8 rounded-2xl shadow-lg">
-                <h2 class="text-3xl font-bold text-center text-[#004D40] mb-2">The Competitive Landscape: A Clear Opportunity</h2>
-                <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Analysis of the full competitor set, including the D4H crisis management brand, reveals a significant opportunity. While some have large subscriber counts, their content is often inconsistent or overly promotional. **No single competitor is effectively owning the "practical, educational" space with a Shorts-first strategy.**</p>
+                <h2 class="text-2xl font-bold text-center text-[#004D40] mb-1">Projection for Option A: The Viral Catalyst</h2>
+                <p class="text-center text-gray-600 mb-4">This aggressive, Shorts-first model is designed for explosive, non-linear growth by maximizing the chances of a breakout video.</p>
                 <div class="chart-container">
-                    <canvas id="competitorChart"></canvas>
-                </div>
-                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 text-sm">
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                        <h4 class="font-bold text-gray-800">Key Takeaway: The "Authority Gap"</h4>
-                        <p class="text-gray-600 mt-2">Competitors like **Safety Culture** (investor favorite) prove there's a huge appetite for "how-to" content, but their production is inconsistent. This creates a major opportunity for EcoOnline to become the most **reliable and consistent** source for practical safety knowledge.</p>
-                    </div>
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                        <h4 class="font-bold text-gray-800">New Insight: The "Crisis Management Niche"</h4>
-                        <p class="text-gray-600 mt-2">**D4H** (1.1k subs, ~170 videos) has built a solid niche with high-quality case studies and product demos. However, their content is almost exclusively long-form and product-focused. They have completely ignored the massive potential of Shorts to provide quick, actionable crisis management tips, leaving a wide-open flank for a competitor to capture the top-of-funnel audience in this valuable space.</p>
-                    </div>
+                    <canvas id="growthChartA"></canvas>
                 </div>
             </div>
         </section>
 
-        <section class="mb-20">
-            <h2 class="text-3xl font-bold text-center text-[#1A202C] mb-8">Connecting with the Full EcoOnline Audience</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-[#A5D6A7]">
-                    <h3 class="text-xl font-bold text-[#004D40]">Frank, The End-User</h3>
-                    <p class="font-semibold text-gray-500 text-sm mb-3">The Field Operator</p>
-                    <p class="text-sm text-gray-700">Values efficiency and needs straightforward instructions that make his job easier and safer without slowing him down.</p>
-                    <p class="text-sm mt-3"><strong class="text-gray-800">Video Need:</strong> Sub-60-second "how-to" Shorts that solve a single, specific app-related problem.</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-[#004D40]">
-                    <h3 class="text-xl font-bold text-[#004D40]">Samantha, The Manager</h3>
-                    <p class="font-semibold text-gray-500 text-sm mb-3">The Safety Professional</p>
-                    <p class="text-sm text-gray-700">Overworked and drowning in paperwork, she needs practical, time-saving solutions for compliance and team engagement.</p>
-                     <p class="text-sm mt-3"><strong class="text-gray-800">Video Need:</strong> Practical guides and compliance explainers (both Shorts and long-form) that establish best practices.</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl shadow-lg border-t-4 border-gray-400">
-                    <h3 class="text-xl font-bold text-[#004D40]">David, The Director</h3>
-                    <p class="font-semibold text-gray-500 text-sm mb-3">The Executive</p>
-                    <p class="text-sm text-gray-700">Focused on ROI, risk, and efficiency, he needs to see the clear business case and strategic impact of any initiative.</p>
-                     <p class="text-sm mt-3"><strong class="text-gray-800">Video Need:</strong> High-level, long-form content (expert interviews, ROI analysis) that frames safety as a driver of business value.</p>
+        <!-- Chart Section B -->
+        <section class="mb-16">
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <h2 class="text-2xl font-bold text-center text-[#004D40] mb-1">Projection for Option B: The Content Engine</h2>
+                <p class="text-center text-gray-600 mb-4">This balanced model projects strong, compounding growth built on a consistent and sustainable release cadence.</p>
+                <div class="chart-container">
+                    <canvas id="growthChartB"></canvas>
                 </div>
             </div>
         </section>
 
-        <div class="mb-12 flex justify-center border-b border-gray-200">
-            <div class="flex flex-wrap justify-center -mb-px">
-                <button class="tab-btn active text-lg font-bold py-4 px-6 border-b-4 border-transparent" data-tab="option-a">Option A: The Viral Catalyst</button>
-                <button class="tab-btn text-lg font-bold py-4 px-6 border-b-4 border-transparent text-gray-500 hover:text-[#004D40] hover:border-gray-300" data-tab="option-b">Option B: The Content Engine</button>
-                <button class="tab-btn text-lg font-bold py-4 px-6 border-b-4 border-transparent text-gray-500 hover:text-[#004D40] hover:border-gray-300" data-tab="option-c">Option C: The Authority Play</button>
-            </div>
-        </div>
-
-        <div id="tab-content">
-            <div id="option-a" class="tab-pane">
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <h2 class="text-3xl font-bold text-[#004D40] mb-4">Option A: The Viral Catalyst</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-8">
-                        <div>
-                            <h4 class="font-bold text-lg">Core Philosophy</h4>
-                            <p class="text-sm text-gray-600">Achieve explosive, rapid audience growth by prioritizing highly engaging, shareable, and sometimes unconventional content.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg">Primary Audience</h4>
-                            <p class="text-sm text-gray-600">Heavily skewed towards **"Frank the End-User"** to build a massive subscriber base that can be nurtured into a community.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg">Release Cadence</h4>
-                            <p class="text-sm text-gray-600">**5 Shorts** per week<br>**1 Long-Form Video** per month</p>
-                        </div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-center text-[#1A202C] mb-6">3-Month Content Calendar</h3>
-                    <div class="overflow-x-auto">
-                        <table class="min-w-full">
-                            <thead class="bg-gray-50">
-                                <tr>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Week</th>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Mon</th>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Tue</th>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Wed</th>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Thu</th>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Fri</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-200 text-sm">
-                                <tr><td colspan="6" class="px-4 py-2 font-semibold bg-green-50 text-[#004D40]">Month 1: Shock & Awe</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">1</td><td class="px-4 py-2">We Dropped a Watermelon in a Hard Hat</td><td class="px-4 py-2">Is Your Fire Extinguisher Expired?</td><td class="px-4 py-2">This Ladder is a Death Trap</td><td class="px-4 py-2">GHS Symbol You Can't Ignore</td><td class="px-4 py-2">Why Most Safety Meetings Fail</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">2</td><td class="px-4 py-2">The Loudest Sound on a Job Site</td><td class="px-4 py-2">This Common Tool Causes 1000s of Injuries</td><td class="px-4 py-2">Testing 3 Types of Safety Glasses</td><td class="px-4 py-2">You're Using Your Harness Wrong</td><td class="px-4 py-2">This Forklift Mistake is Terrifying</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">3</td><td class="px-4 py-2">Can You Spot the 5 Hazards Here?</td><td class="px-4 py-2">What Happens When You Mix These Chemicals?</td><td class="px-4 py-2">The Most Overlooked PPE</td><td class="px-4 py-2">Reacting to Unsafe Work TikToks</td><td class="px-4 py-2">This Is What an Arc Flash Looks Like</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">4</td><td class="px-4 py-2">How Fast Can You Find an SDS?</td><td class="px-4 py-2">Why Your Boots Won't Save You From This</td><td class="px-4 py-2">The Dumbest Safety Myth We've Heard</td><td class="px-4 py-2">This Is Why You Need a Spotter</td><td class="px-4 py-2 font-bold bg-green-200">Long-Form: Breakdown: 5 Viral Workplace Fails</td></tr>
-                                <tr><td colspan="6" class="px-4 py-2 font-semibold bg-green-50 text-[#004D40]">Month 2: Build the Habit</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">5</td><td class="px-4 py-2">A 60s Guide to Lockout/Tagout</td><td class="px-4 py-2">This Is What a Chemical Burn Looks Like</td><td class="px-4 py-2">What's Wrong With This Picture?</td><td class="px-4 py-2">The "Clean Up Later" Myth</td><td class="px-4 py-2">Can a Dust Mask Stop Chemical Fumes?</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">6</td><td class="px-4 py-2">The Real Cost of One "Minor" Injury</td><td class="px-4 py-2">This Is Why You Don't Stand There</td><td class="px-4 py-2">Testing 3 Brands of Work Gloves</td><td class="px-4 py-2">How Strong is a Safety Net?</td><td class="px-4 py-2">The Most Common Electrical Hazard</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">7</td><td class="px-4 py-2">Confined Space Entry in 60s</td><td class="px-4 py-2">Is Your Hearing Protection Working?</td><td class="px-4 py-2">Reacting to "OSHA is a Joke" Memes</td><td class="px-4 py-2">This Is Why You Need a JHA</td><td class="px-4 py-2">What Happens if You Ignore a Safety Tag?</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">8</td><td class="px-4 py-2">The Difference Between a Near Miss & an Incident</td><td class="px-4 py-2">Why "Common Sense" Gets People Hurt</td><td class="px-4 py-2">The Scariest Thing We Found in an Audit</td><td class="px-4 py-2">How to Use a Spill Kit in an Emergency</td><td class="px-4 py-2 font-bold bg-green-200">Long-Form: We Hired an Expert to Debunk 10 Safety Myths</td></tr>
-                                <tr><td colspan="6" class="px-4 py-2 font-semibold bg-green-50 text-[#004D40]">Month 3: Nurture the Audience</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">9</td><td class="px-4 py-2">What's a "Permissible Exposure Limit"?</td><td class="px-4 py-2">This Is Why You Get Trained on Forklifts</td><td class="px-4 py-2">Can You Spot the Ergonomic Hazards?</td><td class="px-4 py-2">The "It's Faster to Work Alone" Myth</td><td class="px-4 py-2">Why Your Old Hard Hat is Useless</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">10</td><td class="px-4 py-2">The Hierarchy of Controls, Explained with LEGOs</td><td class="px-4 py-2">This Is What Happens When a Trench Collapses</td><td class="px-4 py-2">Reacting to "Safety Third" Videos</td><td class="px-4 py-2">The Real Reason for Evacuation Drills</td><td class="px-4 py-2">Can You Hear This Sound? (Hearing Test)</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">11</td><td class="px-4 py-2">What's the Point of a Toolbox Talk?</td><td class="px-4 py-2">This Is Why You Wear Eye Protection</td><td class="px-4 py-2">The "That Will Never Happen to Me" Myth</td><td class="px-4 py-2">How to Read a Fire Extinguisher Tag</td><td class="px-4 py-2">The Most Dangerous Time of Day on a Job Site</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">12</td><td class="px-4 py-2">How to Report a Hazard Anonymously</td><td class="px-4 py-2">Why You Shouldn't Ignore That Warning Sign</td><td class="px-4 py-2">The "I've Done It This Way for 20 Years" Myth</td><td class="px-4 py-2">The Difference Between a Guardrail & a Handrail</td><td class="px-4 py-2 font-bold bg-green-200">Long-Form: From Chaos to Culture: A 5-Step Guide</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
+        <!-- Chart Section C -->
+        <section class="mb-12">
+            <div class="bg-white p-8 rounded-2xl shadow-lg">
+                <h2 class="text-2xl font-bold text-center text-[#004D40] mb-1">Projection for Option C: The Authority Play</h2>
+                <p class="text-center text-gray-600 mb-4">This premium model shows slower initial audience growth but is designed to attract high-value enterprise leads, with acceleration in later months as authority is established.</p>
+                <div class="chart-container">
+                    <canvas id="growthChartC"></canvas>
                 </div>
             </div>
+        </section>
 
-            <div id="option-b" class="tab-pane hidden">
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <h2 class="text-3xl font-bold text-[#004D40] mb-4">Option B: The Content Engine</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-8">
-                        <div>
-                            <h4 class="font-bold text-lg">Core Philosophy</h4>
-                            <p class="text-sm text-gray-600">Become the most trusted educational resource through a balanced, sustainable content mix for steady, long-term audience growth and market authority.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg">Primary Audience</h4>
-                            <p class="text-sm text-gray-600">A balanced approach targeting **"Samantha the Manager"** for engagement and **"Frank the End-User"** for awareness.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg">Release Cadence</h4>
-                            <p class="text-sm text-gray-600">**3 Shorts** per week<br>**1 Long-Form Video** per month</p>
-                        </div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-center text-[#1A202C] mb-6">3-Month Content Calendar</h3>
-                    <div class="overflow-x-auto">
-                        <table class="min-w-full">
-                            <thead class="bg-gray-50">
-                                <tr>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Week</th>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Mon (Short)</th>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Wed (Short)</th>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Fri (Short / Long-Form)</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-200 text-sm">
-                                <tr><td colspan="4" class="px-4 py-2 font-semibold bg-green-50 text-[#004D40]">Month 1: Foundation & Launch</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">1</td><td class="px-4 py-2">Compliance Clip: GHS Pictograms Explained in 45s</td><td class="px-4 py-2">Mythbuster: "The top step of a ladder is fine, right?"</td><td class="px-4 py-2">Field Note: Stop Using Bad Risk Assessment Matrices</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">2</td><td class="px-4 py-2">Compliance Clip: OSHA's #1 Violation This Year</td><td class="px-4 py-2">Mythbuster: "Safety meetings are a waste of time."</td><td class="px-4 py-2">Field Note: The One Sentence for Better Toolbox Talks</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">3</td><td class="px-4 py-2">Compliance Clip: What Actually Triggers an OSHA Inspection?</td><td class="px-4 py-2">Mythbuster: "If there's no accident, there's no problem."</td><td class="px-4 py-2">Field Note: 3 Things to Check on a Ladder Before You Climb</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">4</td><td class="px-4 py-2">Compliance Clip: Can You Be Fined for Not Wearing a Hard Hat?</td><td class="px-4 py-2">Mythbuster: "This safety rule doesn't apply to me."</td><td class="px-4 py-2 font-bold bg-green-200">Long-Form: A Step-by-Step Guide to a Flawless Incident Investigation</td></tr>
-                                <tr><td colspan="4" class="px-4 py-2 font-semibold bg-green-50 text-[#004D40]">Month 2: Building Cadence</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">5</td><td class="px-4 py-2">Compliance Clip: What's an SDS and Why Does It Matter?</td><td class="px-4 py-2">Mythbuster: "I don't need PPE for a 'quick' job."</td><td class="px-4 py-2">Field Note: The Most Important Section on an SDS</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">6</td><td class="px-4 py-2">Compliance Clip: The 3 Parts of a Lockout/Tagout Procedure</td><td class="px-4 py-2">Mythbuster: "Near misses aren't a big deal."</td><td class="px-4 py-2">Field Note: How to Choose the Right Gloves for the Job</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">7</td><td class="px-4 py-2">Compliance Clip: What Makes Someone a "Competent Person"?</td><td class="px-4 py-2">Mythbuster: "I've done it this way for 20 years."</td><td class="px-4 py-2">Field Note: The 3 Points of Contact Rule for Ladder Safety</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">8</td><td class="px-4 py-2">Compliance Clip: When is Fall Protection *Actually* Required?</td><td class="px-4 py-2">Mythbuster: "Safety is just common sense."</td><td class="px-4 py-2 font-bold bg-green-200">Long-Form: How to Calculate the True ROI of Your Safety Program</td></tr>
-                                <tr><td colspan="4" class="px-4 py-2 font-semibold bg-green-50 text-[#004D40]">Month 3: Scaling & Authority</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">9</td><td class="px-4 py-2">Compliance Clip: Confined Space: Permit vs. Non-Permit</td><td class="px-4 py-2">Mythbuster: "Minor injuries don't need to be reported."</td><td class="px-4 py-2">Field Note: How to Properly Inspect Your Harness in 60s</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">10</td><td class="px-4 py-2">Compliance Clip: What is a Job Hazard Analysis (JHA)?</td><td class="px-4 py-2">Mythbuster: "I'll clean it up later."</td><td class="px-4 py-2">Field Note: The Difference Between a Guardrail and a Handrail</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">11</td><td class="px-4 py-2">Compliance Clip: The Hierarchy of Controls in 60 Seconds</td><td class="px-4 py-2">Mythbuster: "It's faster to work alone."</td><td class="px-4 py-2">Field Note: What to Do When You See an Unsafe Act</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">12</td><td class="px-4 py-2">Compliance Clip: What is a Permissible Exposure Limit (PEL)?</td><td class="px-4 py-2">Mythbuster: "That will never happen to me."</td><td class="px-4 py-2 font-bold bg-green-200">Long-Form: 5 Signs of a Toxic Safety Culture (and How to Fix It)</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <div id="option-c" class="tab-pane hidden">
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <h2 class="text-3xl font-bold text-[#004D40] mb-4">Option C: The Authority Play</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-8">
-                        <div>
-                            <h4 class="font-bold text-lg">Core Philosophy</h4>
-                            <p class="text-sm text-gray-600">Attract high-value enterprise leads by prioritizing premium, C-suite-focused content. A slower-growth, quality-over-quantity model to become the definitive thought leader.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg">Primary Audience</h4>
-                            <p class="text-sm text-gray-600">Heavily focused on **"David the Director,"** with content designed to be shared among executive leadership teams.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-lg">Release Cadence</h4>
-                            <p class="text-sm text-gray-600">**2 Shorts (as "Trailers")** per week<br>**2 Long-Form Videos** per month</p>
-                        </div>
-                    </div>
-                    <h3 class="text-2xl font-bold text-center text-[#1A202C] mb-6">3-Month Content Calendar</h3>
-                    <div class="overflow-x-auto">
-                        <table class="min-w-full">
-                            <thead class="bg-gray-50">
-                                <tr>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Week</th>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Tue (Short Trailer)</th>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Thu (Short Trailer)</th>
-                                    <th class="px-4 py-2 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Fri (Long-Form Release)</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-200 text-sm">
-                                <tr><td colspan="4" class="px-4 py-2 font-semibold bg-green-50 text-[#004D40]">Month 1: Setting the Tone</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">1</td><td class="px-4 py-2">The True Cost of a Single Safety Incident</td><td class="px-4 py-2">Why ESG is No Longer Optional</td><td class="px-4 py-2 text-gray-400 italic">No Release</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">2</td><td class="px-4 py-2">Key Quote from "The ROI of Safety"</td><td class="px-4 py-2">Data Point from "The ROI of Safety"</td><td class="px-4 py-2 font-bold bg-green-200">The ROI of Safety: A C-Suite Roundtable</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">3</td><td class="px-4 py-2">The Biggest Mistake in Incident Reporting</td><td class="px-4 py-2">Is Your Data Telling the Right Story?</td><td class="px-4 py-2 text-gray-400 italic">No Release</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">4</td><td class="px-4 py-2">Key Quote from "Beyond Compliance"</td><td class="px-4 py-2">Data Point from "Beyond Compliance"</td><td class="px-4 py-2 font-bold bg-green-200">Beyond Compliance: Turning Safety Data into a Competitive Advantage</td></tr>
-                                <tr><td colspan="4" class="px-4 py-2 font-semibold bg-green-50 text-[#004D40]">Month 2: Expanding Influence</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">5</td><td class="px-4 py-2">The #1 Risk to Your Safety Culture</td><td class="px-4 py-2">Why Top-Down Leadership is Crucial</td><td class="px-4 py-2 text-gray-400 italic">No Release</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">6</td><td class="px-4 py-2">Key Quote from "Toxic Safety Cultures"</td><td class="px-4 py-2">Data Point from "Toxic Safety Cultures"</td><td class="px-4 py-2 font-bold bg-green-200">5 Signs of a Toxic Safety Culture (and How to Fix It)</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">7</td><td class="px-4 py-2">What Investors Are Asking About ESG</td><td class="px-4 py-2">The Link Between Safety & Profitability</td><td class="px-4 py-2 text-gray-400 italic">No Release</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">8</td><td class="px-4 py-2">Key Quote from "ESG as a Growth Driver"</td><td class="px-4 py-2">Data Point from "ESG as a Growth Driver"</td><td class="px-4 py-2 font-bold bg-green-200">ESG as a Growth Driver: An Interview with an Industry Analyst</td></tr>
-                                <tr><td colspan="4" class="px-4 py-2 font-semibold bg-green-50 text-[#004D40]">Month 3: Market Dominance</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">9</td><td class="px-4 py-2">The Future of EHS Technology</td><td class="px-4 py-2">AI's Role in Predictive Safety</td><td class="px-4 py-2 text-gray-400 italic">No Release</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">10</td><td class="px-4 py-2">Key Quote from "The Proactive Safety Strategy"</td><td class="px-4 py-2">Data Point from "The Proactive Safety Strategy"</td><td class="px-4 py-2 font-bold bg-green-200">Leading vs. Lagging Indicators: Building a Truly Proactive Safety Strategy</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">11</td><td class="px-4 py-2">The Most Overlooked Compliance Risk</td><td class="px-4 py-2">Preparing for the Next Wave of Regulations</td><td class="px-4 py-2 text-gray-400 italic">No Release</td></tr>
-                                <tr><td class="px-4 py-2 font-bold">12</td><td class="px-4 py-2">Key Quote from "The CSRD Mandate"</td><td class="px-4 py-2">Data Point from "The CSRD Mandate"</td><td class="px-4 py-2 font-bold bg-green-200">The CSRD Mandate: What Every Director Needs to Know</td></tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const tabs = document.querySelectorAll('.tab-btn');
-            const panes = document.querySelectorAll('.tab-pane');
+            // --- SHARED DATA AND FUNCTIONS ---
 
-            tabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    // Deactivate all tabs and panes
-                    tabs.forEach(t => {
-                        t.classList.remove('active');
-                        t.classList.add('text-gray-500', 'hover:text-[#004D40]', 'hover:border-gray-300');
-                    });
-                    panes.forEach(p => p.classList.add('hidden'));
+            // Helper function to generate historical data points
+            const generateData = (start, growth, length, noise) => {
+                let data = [start];
+                for (let i = 1; i < length; i++) {
+                    let nextValue = data[i - 1] * growth + (Math.random() - 0.5) * noise;
+                    data.push(Math.max(0, nextValue));
+                }
+                return data;
+            };
+            
+            // Helper function to generate projection data points
+            const generateProjectionData = (startData, growthFactor, inflectionPoint, noiseMultiplier = 0.1) => {
+                let projection = [];
+                let lastValue = startData[startData.length - 1];
+                for (let i = 0; i < 12; i++) {
+                    let currentGrowth = i < inflectionPoint ? 1.15 : growthFactor;
+                    lastValue *= currentGrowth;
+                    projection.push(lastValue + (Math.random() - 0.5) * lastValue * noiseMultiplier);
+                }
+                return projection;
+            };
 
-                    // Activate the clicked tab and pane
-                    tab.classList.add('active');
-                    tab.classList.remove('text-gray-500', 'hover:text-[#004D40]', 'hover:border-gray-300');
-                    const targetPaneId = tab.getAttribute('data-tab');
-                    document.getElementById(targetPaneId).classList.remove('hidden');
-                });
-            });
+            const months = Array.from({ length: 12 }, (_, i) => new Date(new Date().setMonth(new Date().getMonth() - 11 + i)));
+            const projectionMonths = Array.from({ length: 12 }, (_, i) => new Date(new Date().setMonth(new Date().getMonth() + i)));
 
-            // Competitor Chart
-            const ctx = document.getElementById('competitorChart');
-            if (ctx) {
-                new Chart(ctx.getContext('2d'), {
-                    type: 'bar',
-                    data: {
-                        labels: ['Safety Culture', 'Intelex', 'D4H', 'Cority', 'Enablon', 'Velocity EHS', 'EcoOnline', 'Sphera'],
-                        datasets: [{
-                            label: 'YouTube Subscribers',
-                            data: [31600, 1690, 1100, 418, 470, 250, 168, 134],
-                            backgroundColor: [
-                                '#004D40', 
-                                '#A5D6A7',
-                                '#A5D6A7',
-                                '#A5D6A7',
-                                '#A5D6A7',
-                                '#A5D6A7',
-                                '#FFC107', // Highlight EcoOnline
-                                '#A5D6A7'
-                            ],
-                            borderColor: '#FFFFFF',
-                            borderWidth: 2
-                        }]
+            // Shared Historical Data Simulation
+            const safetyCultureData = generateData(150000, 1.15, 12, 30000);
+            const intelexData = generateData(20000, 1.05, 12, 5000);
+            const corityData = generateData(15000, 1.06, 12, 4000);
+            const ecoOnlineHistorical = generateData(5000, 1.01, 12, 500);
+
+            const sharedDatasets = [
+                {
+                    label: 'Safety Culture (Trajectory)',
+                    data: safetyCultureData,
+                    borderColor: '#004D40',
+                    borderWidth: 3,
+                    tension: 0.3,
+                    fill: false,
+                },
+                {
+                    label: 'Intelex (Trajectory)',
+                    data: intelexData,
+                    borderColor: '#A5D6A7',
+                    borderWidth: 2,
+                    borderDash: [5, 5],
+                    tension: 0.3,
+                    fill: false,
+                },
+                {
+                    label: 'Cority (Trajectory)',
+                    data: corityData,
+                    borderColor: '#BDBDBD',
+                    borderWidth: 2,
+                    borderDash: [5, 5],
+                    tension: 0.3,
+                    fill: false,
+                },
+                {
+                    label: 'EcoOnline (Current Trajectory)',
+                    data: ecoOnlineHistorical,
+                    borderColor: '#FFC107',
+                    borderWidth: 3,
+                    tension: 0.3,
+                    fill: false,
+                }
+            ];
+            
+            const sharedOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        type: 'time',
+                        time: { unit: 'month' },
+                        labels: [...months, ...projectionMonths].map(d => d.getTime()),
                     },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        indexAxis: 'y',
-                        scales: {
-                            x: {
-                                beginAtZero: true,
-                                title: {
-                                    display: true,
-                                    text: 'Subscribers'
-                                },
-                                ticks: {
-                                    callback: function(value) {
-                                        if (value >= 1000) {
-                                            return (value / 1000) + 'k';
-                                        }
-                                        return value;
-                                    }
-                                }
-                            }
-                        },
-                        plugins: {
-                            legend: {
-                                display: false
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Estimated Monthly Views' },
+                        ticks: {
+                            callback: function(value) {
+                                if (value >= 1000000) return Math.round(value / 1000000) + 'M';
+                                if (value >= 1000) return Math.round(value / 1000) + 'k';
+                                return Math.round(value);
                             }
                         }
                     }
-                });
-            }
+                },
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) { label += ': '; }
+                                if (context.parsed.y !== null) {
+                                    const roundedValue = Math.round(context.parsed.y / 100) * 100;
+                                    label += new Intl.NumberFormat('en-US').format(roundedValue);
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            };
+
+            // --- CHART A: VIRAL CATALYST ---
+            const ecoOnlineProjectionA = generateProjectionData(ecoOnlineHistorical, 1.6, 2);
+            const ctxA = document.getElementById('growthChartA').getContext('2d');
+            new Chart(ctxA, {
+                type: 'line',
+                data: {
+                    datasets: [
+                        ...JSON.parse(JSON.stringify(sharedDatasets)),
+                        {
+                            label: 'EcoOnline (Projected Growth)',
+                            data: [...Array(11).fill(null), ecoOnlineHistorical[11], ...ecoOnlineProjectionA],
+                            borderColor: '#00BCD4',
+                            backgroundColor: 'rgba(0, 188, 212, 0.1)',
+                            borderWidth: 4,
+                            tension: 0.4,
+                            fill: true,
+                        }
+                    ]
+                },
+                options: sharedOptions
+            });
+
+            // --- CHART B: CONTENT ENGINE ---
+            const ecoOnlineProjectionB = generateProjectionData(ecoOnlineHistorical, 1.3, 4);
+            const ctxB = document.getElementById('growthChartB').getContext('2d');
+            new Chart(ctxB, {
+                type: 'line',
+                data: {
+                    datasets: [
+                        ...JSON.parse(JSON.stringify(sharedDatasets)),
+                        {
+                            label: 'EcoOnline (Projected Growth)',
+                            data: [...Array(11).fill(null), ecoOnlineHistorical[11], ...ecoOnlineProjectionB],
+                            borderColor: '#8BC34A',
+                            backgroundColor: 'rgba(139, 195, 74, 0.1)',
+                            borderWidth: 4,
+                            tension: 0.4,
+                            fill: true,
+                        }
+                    ]
+                },
+                options: sharedOptions
+            });
+
+            // --- CHART C: AUTHORITY PLAY ---
+            const ecoOnlineProjectionC = generateProjectionData(ecoOnlineHistorical, 1.15, 6);
+            const ctxC = document.getElementById('growthChartC').getContext('2d');
+            new Chart(ctxC, {
+                type: 'line',
+                data: {
+                    datasets: [
+                        ...JSON.parse(JSON.stringify(sharedDatasets)),
+                        {
+                            label: 'EcoOnline (Projected Growth)',
+                            data: [...Array(11).fill(null), ecoOnlineHistorical[11], ...ecoOnlineProjectionC],
+                            borderColor: '#7E57C2',
+                            backgroundColor: 'rgba(126, 87, 194, 0.1)',
+                            borderWidth: 4,
+                            tension: 0.4,
+                            fill: true,
+                        }
+                    ]
+                },
+                options: sharedOptions
+            });
         });
     </script>
 </body>
